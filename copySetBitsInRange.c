@@ -20,8 +20,9 @@ return 0;
 int copySetBits(int x,int y,int l,int r){
 	if(l < 1 || r > 32)
 	return x;
+	int i;
 	
-	for(int i=1;i<=r;i++)
+	for(i=1;i<=r;i++)
 	{
 		int mask = 1 << (i-1);
 		if(y & mask)
